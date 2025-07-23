@@ -19,14 +19,21 @@ app.post('/webhook', middleware(config), async (req, res) => {
       const userId = event.source.userId;
 
       if (event.type === 'follow') {
+        // ユーザー登録
         await axios.post(process.env.GAS_API_URL, { userId });
+
+        // 即時リマインド送信をGASに依頼
+        await axios.post(process.env.GAS_REMIND_NOW_API_URL, { userId });
+
         await client.replyMessage(event.replyToken, {
           type: 'text',
           text: '友達登録ありがとうございます！Googleカレンダーの予定を自動でリマインドします！QOL爆上げしましょう！！！！',
         });
 
       } else if (event.type === 'message' && event.message.type === 'text') {
+        // メッセージ受信時もユーザー登録（重複OK）
         await axios.post(process.env.GAS_API_URL, { userId });
+
         await client.replyMessage(event.replyToken, {
           type: 'text',
           text: 'やっほー！登録情報を確認しました📋',
