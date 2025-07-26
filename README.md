@@ -92,5 +92,5 @@ GoogleのOAuth2認証を利用して安全にユーザーのカレンダー情�
 
 ## 開発者
 
-Name: SatoHrioki
-Address: glay45290615@gmail.com
+- Name: SatoHrioki
+- Address: glay45290615@gmail.com
