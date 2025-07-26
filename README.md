@@ -21,14 +21,15 @@ GoogleのOAuth2認証を利用して安全にユーザーのカレンダー情�
 
 ## 利用技術
 
-| 技術名                  | 説明                                        |
-|-------------------------|---------------------------------------------|
-| Google Apps Script       | Googleサービス連携のスクリプト開発環境        |
-| Google Calendar API     | カレンダー情報取得のAPI                        |
-| LINE Messaging API       | LINE Botとの通信API                          |
-| Node.js                 | ローカル開発やサーバー側処理で使用            |
-| Ngrok                   | ローカルサーバーをインターネット公開するツール  |
-| OAuth2ライブラリ         | GASでOAuth2認証を簡単に実装するライブラリ       |
+| 技術名                 | 説明                        |
+| ------------------- | ------------------------- |
+| Google Apps Script  | Googleサービス連携のスクリプト開発環境    |
+| Google Calendar API | カレンダー情報取得のAPI             |
+| LINE Messaging API  | LINE Botとの通信API           |
+| Node.js             | ローカル開発やサーバー側処理で使用         |
+| Ngrok               | ローカルサーバーをインターネット公開するツール   |
+| OAuth2ライブラリ         | GASでOAuth2認証を簡単に実装するライブラリ |
+| Render              | Node.jsアプリのクラウドホスティングサービス |
 
 ---
 
